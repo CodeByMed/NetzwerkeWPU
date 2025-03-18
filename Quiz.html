@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netzwerk Quiz | ByteShift.IO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ByteShiftIcon.png">
+</head>
+
+            <!--Von Omedooo (DevByMed) -->
+<body class="quiz-body">
+    <header>
+        <h1>Netzwerk Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Zurück zur Hauptseite</a></li>
+                <li><a href="FiliusAufgaben.html">Zurück zu den Aufgaben</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Frage 1 -->
+        <section id="question-1" class="quiz-section">
+            <h2>Frage 1: Wie greift man auf die IP-Adresse in der Befehlszeile zu?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q1" value="ipconfig">
+                    <span>Option 1: ipconfig</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="getIpAdress">
+                    <span>Option 2: getIpAdress</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="Ip.get">
+                    <span>Option 3: Ip.get</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q1', 'ipconfig', 'question-2', 'Mit ipconfig können Sie die IP-Adresse anzeigen.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 2 -->
+        <section id="question-2" class="quiz-section hidden">
+            <h2>Frage 2: Welche Netzmaske wird für ein /24-Netzwerk verwendet?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q2" value="255.255.255.0">
+                    <span>Option 1: 255.255.255.0</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="255.255.0.0">
+                    <span>Option 2: 255.255.0.0</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="255.0.0.0">
+                    <span>Option 3: 255.0.0.0</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q2', '255.255.255.0', 'question-3', 'Ein /24-Netzwerk verwendet die Netzmaske 255.255.255.0.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 3 -->
+        <section id="question-3" class="quiz-section hidden">
+            <h2>Frage 3: Was ist die Standard-Gateway-Adresse in einem Netzwerk?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q3" value="Router-IP">
+                    <span>Option 1: Die IP-Adresse des Routers</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="Broadcast-IP">
+                    <span>Option 2: Die Broadcast-Adresse</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="Subnetz-IP">
+                    <span>Option 3: Die Subnetz-Adresse</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q3', 'Router-IP', 'question-4', 'Die Standard-Gateway-Adresse ist die IP-Adresse des Routers.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 4 -->
+        <section id="question-4" class="quiz-section hidden">
+            <h2>Frage 4: Welches Protokoll wird verwendet, um Webseiten zu laden?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q4" value="HTTP">
+                    <span>Option 1: HTTP</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="SMTP">
+                    <span>Option 2: SMTP</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="FTP">
+                    <span>Option 3: FTP</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q4', 'HTTP', 'question-5', 'HTTP wird verwendet, um Webseiten zu laden.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 5 -->
+        <section id="question-5" class="quiz-section hidden">
+            <h2>Frage 5: Welche IP-Adresse gehört zu einem privaten Netzwerk?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q5" value="192.168.1.1">
+                    <span>Option 1: 192.168.1.1</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="8.8.8.8">
+                    <span>Option 2: 8.8.8.8</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="1.1.1.1">
+                    <span>Option 3: 1.1.1.1</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q5', '192.168.1.1', 'question-6', '192.168.1.1 gehört zu den privaten IP-Adressen.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 6 -->
+        <section id="question-6" class="quiz-section hidden">
+            <h2>Frage 6: Was bedeutet DNS?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q6" value="Domain Name System">
+                    <span>Option 1: Domain Name System</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="Dynamic Network Service">
+                    <span>Option 2: Dynamic Network Service</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="Data Name Server">
+                    <span>Option 3: Data Name Server</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q6', 'Domain Name System', 'question-7', 'DNS steht für Domain Name System und übersetzt Domainnamen in IP-Adressen.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 7 -->
+        <section id="question-7" class="quiz-section hidden">
+            <h2>Frage 7: Welches Protokoll wird für den E-Mail-Versand verwendet?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q7" value="SMTP">
+                    <span>Option 1: SMTP</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="IMAP">
+                    <span>Option 2: IMAP</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="POP3">
+                    <span>Option 3: POP3</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q7', 'SMTP', 'question-8', 'SMTP wird für den Versand von E-Mails verwendet.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 8 -->
+        <section id="question-8" class="quiz-section hidden">
+            <h2>Frage 8: Was ist die maximale Anzahl von Hosts in einem /30-Subnetz?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q8" value="2">
+                    <span>Option 1: 2</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="4">
+                    <span>Option 2: 4</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="6">
+                    <span>Option 3: 6</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q8', '2', 'question-9', 'Ein /30-Subnetz hat maximal 2 nutzbare Hosts.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 9 -->
+        <section id="question-9" class="quiz-section hidden">
+            <h2>Frage 9: Welches Protokoll wird für sichere Webseiten verwendet?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q9" value="HTTPS">
+                    <span>Option 1: HTTPS</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="HTTP">
+                    <span>Option 2: HTTP</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="SSL">
+                    <span>Option 3: SSL</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q9', 'HTTPS', 'question-10', 'HTTPS wird für sichere Webseiten verwendet.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+
+        <!-- Frage 10 -->
+        <section id="question-10" class="quiz-section hidden">
+            <h2>Frage 10: Welche Adresse ist die Loopback-Adresse?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q10" value="127.0.0.1">
+                    <span>Option 1: 127.0.0.1</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="192.168.0.1">
+                    <span>Option 2: 192.168.0.1</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="10.0.0.1">
+                    <span>Option 3: 10.0.0.1</span>
+                </label><br><br>
+                <button type="button" onclick="checkAnswer('q10', '127.0.0.1', null, 'Die Loopback-Adresse ist 127.0.0.1 und wird verwendet, um den eigenen Computer zu testen.')">Submit</button>
+            </form>
+            <p class="feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ByteShift.IO | Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function checkAnswer(questionName, correctAnswer, nextSectionId, explanation) {
+            const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+            const feedback = document.querySelector(`#question-${questionName.split('q')[1]} .feedback`);
+            const options = document.querySelectorAll(`#question-${questionName.split('q')[1]} span`);
+
+            options.forEach(option => option.style.border = "none"); // Reset borders
+
+            if (selected) {
+                const parentSpan = selected.nextElementSibling;
+                if (selected.value === correctAnswer) {
+                    parentSpan.style.border = "2px solid green";
+                    parentSpan.style.opacity = "0.7";
+                    feedback.textContent = explanation;
+                    feedback.style.color = "green";
+                    if (nextSectionId) {
+                        document.getElementById(nextSectionId).classList.remove('hidden');
+                    }
+                } else {
+                    parentSpan.style.border = "2px solid red";
+                    parentSpan.style.opacity = "0.7";
+                    feedback.textContent = "Falsch! Versuchen Sie es nochmal!";
+                    feedback.style.color = "red";
+                }
+            } else {
+                feedback.textContent = "Bitte wählen Sie eine Option aus.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Allgemeine Netzwerk | ByteShift.IO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ByteShiftIcon.png">
+</head>
+<body>
+
+            <!--Von Omedooo (DevByMed) -->
+    <header>
+        <h1>Netzwerk Grundlagen & Filius Aufgaben Von Omed</h1>
+        <nav>
+            <ul>
+                <li><a href="#network-overview">Netzwerk Übersicht</a></li>
+                <li><a href="#mac-ip">MAC & IP Adressen</a></li>
+                <li><a href="#subnetting">Subnetting</a></li>
+                <li><a href="#binary-calculations">Binär Berechnung</a></li>
+                <li><a href="#servers">Web- & E-Mail Server</a></li>
+                <li><a href="#filius-tasks">Filius Aufgaben</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="network-overview">
+            <h2>Was ist ein Netzwerk?</h2>
+            <p>Ein Netzwerk ist ein System, das Computer, Geräte und Server miteinander verbindet, um Daten auszutauschen. Es ermöglicht die Kommunikation zwischen Geräten über Protokolle wie TCP/IP, HTTP und viele andere.</p>
+            <p>Netzwerke können lokal (LAN) oder global (WAN) sein. Sie bilden die Grundlage moderner Kommunikation und ermöglichen Dienste wie das Internet, Cloud Computing, Online-Spiele und vieles mehr.</p>
+            <p><strong>Beispiel:</strong> Ein Heimnetzwerk verbindet Ihren Computer, Ihr Smartphone und Ihren Drucker über einen Router. Der Router sorgt dafür, dass alle Geräte miteinander kommunizieren können.</p>
+            <p><strong>Warum?</strong> Netzwerke erleichtern die Zusammenarbeit, den Datenaustausch und die gemeinsame Nutzung von Ressourcen wie Druckern oder Dateien.</p>
+            <p>Mehr über Adressen und ihre Bedeutung erfahren Sie im Abschnitt <a href="#mac-ip">MAC & IP Adressen</a>.</p>
+            <hr>
+        </section>
+
+        <section id="mac-ip">
+            <h2>MAC & IP Adressen</h2>
+            <p>MAC-Adressen (Media Access Control) sind eindeutige Hardware-Identifikatoren, die jedem Netzwerkgerät zugewiesen werden. Sie sind fest in die Netzwerkkarte eingebrannt und ändern sich nicht.</p>
+            <p>IP-Adressen (Internet Protocol) sind logische Adressen, die Geräten zugewiesen werden, um sie im Netzwerk zu identifizieren. IPv4 verwendet 32-Bit-Adressen, während IPv6 128-Bit-Adressen nutzt, um mehr Geräte zu unterstützen.</p>
+            <p><strong>Beispiel:</strong> Die MAC-Adresse eines Geräts könnte <code>00:1A:2B:3C:4D:5E</code> sein, während die IP-Adresse <code>192.168.1.1</code> lautet.</p>
+            <p><strong>Warum?</strong> Die MAC-Adresse bleibt immer gleich und dient der Hardware-Identifikation, während die IP-Adresse sich ändern kann, z. B. wenn ein Gerät in ein anderes Netzwerk wechselt.</p>
+            <p>Für die Berechnung von IP-Adressen und deren Umwandlung in Binärzahlen siehe <a href="#binary-calculations">Binär Berechnungen</a>.</p>
+            <hr>
+        </section>
+
+        <section id="subnetting">
+            <h2>Subnetting & Netzmasken</h2>
+            <p>Subnetting ist eine Technik, um ein großes Netzwerk in kleinere, effizientere Subnetze zu unterteilen. Dies verbessert die Sicherheit, reduziert den Datenverkehr und erleichtert die Verwaltung.</p>
+            <p>Netzmasken (z. B. 255.255.255.0) bestimmen, welcher Teil der IP-Adresse das Netzwerk und welcher Teil das Gerät identifiziert. Sie helfen dabei, die Struktur eines Netzwerks zu definieren.</p>
+            <p><strong>Beispiel:</strong> Eine IP-Adresse <code>192.168.1.10</code> mit der Netzmaske <code>255.255.255.0</code> gehört zum Netzwerk <code>192.168.1.0</code>. Geräte innerhalb desselben Netzwerks können direkt miteinander kommunizieren.</p>
+            <p><strong>Warum?</strong> Subnetting hilft, Netzwerke effizient zu organisieren, die Sicherheit zu erhöhen und Konflikte zu vermeiden, indem Geräte in kleinere Gruppen aufgeteilt werden.</p>
+            <p>Für die Berechnung von Subnetzen und Netzmasken siehe <a href="#binary-calculations">Binär Berechnungen</a>.</p>
+            <hr>
+        </section>
+
+        <section id="binary-calculations">
+            <h2>Binär Berechnungen</h2>
+            <p>Netzwerke arbeiten häufig mit Binärzahlen zur Adressierung und Datenübertragung. Binärzahlen bestehen nur aus Einsen und Nullen, da Computer intern mit diesem Zahlensystem arbeiten.</p>
+            <p>Zum Beispiel wird eine IP-Adresse wie 192.168.1.1 in Binär als 11000000.10101000.00000001.00000001 dargestellt. Diese Darstellung ist wichtig für Subnetting und Routing.</p>
+            <p><strong>Beispiel:</strong> Die Dezimalzahl <code>192</code> wird in Binär als <code>11000000</code> dargestellt.</p>
+            <p><strong>Warum?</strong> Binärberechnungen sind notwendig, um Netzwerke effizient zu planen und zu verwalten, da sie die Grundlage für viele Netzwerkoperationen bilden.</p>
+            <hr>
+        </section>
+
+        <section id="servers">
+            <h2>Webserver & E-Mail Server</h2>
+            <p>Ein Webserver hostet Webseiten und stellt sie Benutzern über das HTTP- oder HTTPS-Protokoll zur Verfügung. Beispiele für Webserver sind Apache, Nginx und Microsoft IIS.</p>
+            <p>Ein E-Mail-Server verwaltet den E-Mail-Verkehr. Er verwendet Protokolle wie SMTP (zum Senden von E-Mails), IMAP und POP3 (zum Empfangen von E-Mails).</p>
+            <p><strong>Beispiel:</strong> Wenn Sie eine E-Mail senden, wird diese zuerst an den SMTP-Server Ihres E-Mail-Anbieters gesendet, der sie dann an den Empfänger weiterleitet.</p>
+            <p><strong>Warum?</strong> Server ermöglichen die zentrale Verwaltung und Verteilung von Daten, was die Kommunikation und den Zugriff auf Informationen effizienter macht.</p>
+            <hr>
+        </section>
+
+        <section id="filius-tasks">
+            <h2>Filius Aufgaben</h2>
+            <p>Filius ist ein Tool, das Schülern und Studenten hilft, Netzwerkkonzepte durch Simulationen zu verstehen. Es ermöglicht das Erstellen und Testen virtueller Netzwerke in einer sicheren Umgebung.</p>
+            <p>Mit Filius können Benutzer lernen, wie Datenpakete gesendet werden, wie Routing funktioniert und wie Netzwerke konfiguriert werden. Es ist besonders nützlich für Anfänger, die praktische Erfahrungen sammeln möchten.</p>
+            <p><strong>Beispiel:</strong> Erstellen Sie ein Netzwerk mit zwei Computern und einem Router in Filius. Testen Sie die Verbindung, indem Sie eine Nachricht von einem Computer zum anderen senden.</p>
+            <p><strong>Warum?</strong> Simulationen helfen, komplexe Konzepte praktisch zu verstehen und Fehler ohne reale Konsequenzen zu machen.</p>
+            <p>Weitere Aufgaben und Übungen findet Ihr auf der Seite <a href="filiusAufgaben.html" target="_blank">Filius Aufgaben</a>, um ein kleines Netzwerk aufzubauen und zu trainieren.</p>
+            <hr>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ByteShift.IO | Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
